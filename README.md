@@ -20,6 +20,18 @@
 
 ## Быстрый старт
 
+### Запуск одной командой (Windows)
+
+Из корня проекта:
+
+```powershell
+.\start-project.bat
+```
+
+Скрипт откроет два отдельных окна PowerShell:
+- backend (`uvicorn` на `127.0.0.1:8000`)
+- frontend (`next dev` на `localhost:3000`)
+
 ### 1) Backend
 
 Из корня проекта:
