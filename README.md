@@ -109,6 +109,9 @@ npm run build
   - Можно запускать Python напрямую: `.\.venv\Scripts\python ...` (как в примерах выше).
 - Если frontend не стартует с ошибкой `next is not recognized`:
   - Выполнить `npm install` в папке `frontend`.
+- Файл `next-swc.win32-x64-msvc.node` (Windows-бинарник SWC для Next.js) обязателен для запуска frontend на Windows.
+  - Он устанавливается автоматически командой `npm install` в `frontend/node_modules`.
+  - Этот файл не нужно добавлять в git (как и всю папку `node_modules`).
 - Если frontend не видит backend:
   - Проверить, что backend работает на `:8000`.
   - Проверить `NEXT_PUBLIC_API_URL` и CORS-настройки.
